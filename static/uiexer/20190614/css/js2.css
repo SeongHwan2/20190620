@@ -3,7 +3,7 @@ html, body {
     overflow: hidden;
 }
 section {
-    background: url(./img/game.png) no-repeat;
+    background: url(../img/game.png) no-repeat;
     background-size: contain;
     width: calc(50px * 11);
     height: calc(50px * 8);
