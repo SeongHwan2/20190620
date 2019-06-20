@@ -1,25 +1,7 @@
-var http = require('http');
-var fs = require("fs");//file system 표시
-var hostname = '127.0.0.1';
-var server = http.createServer(function(req, res) {
-  // http://localhost/index.html : req.url = index.html
-  // http://localhost/  req.url = "/"
-  //console.log(require("path").extname(req.url));
-  var url = "";
-  if(req.url == "/") {
-    url = "/index.html"
-  }else if (req.url == "/favicon.ico") {
-    return res.writeHead(404);
-  } else if (require("path").extname(req.url) == ".css") {
-     url = req.url;
-     res.setHeader('Content-Type', 'text/css');
-  } else {
-    url = req.url;
-    res.setHeader('Content-Type', 'text/html');
-  }
-  res.statusCode = 200;
-  res.end(fs.readFileSync(__dirname + url));
-});
+var ex = require("express");
+var app = ex(); //express 생성
+app.use(require("serve-static")(__dirname + "/static"));//사용자 정의 정적파일 위치 정의(html, css는 정적파일이기 때문에)
+var server = require('http').createServer(app);
 server.listen(80, function() {
   console.log('Server running~');
 });
