@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{box-sizing: border-box;}
+            html,body{width: 100%; height: 100%; padding: 0; margin: 0; background-color: #eceeee; }
+            header{height: 50px; background-color: black; clear: both;}
+            nav{width: 100px; float: left; max-height: 1500px;
+                /*overflow-y: auto;*/ min-height: calc(100vh - 100px);
+            }
+            section{border-bottom: 1px solid black; width: calc(100% - 100px); float: right; border-left: 1px solid black;}
+            footer{height: 50px; background-color: black; clear: both;}
+            .h1{height: 100px;}
+            .h2{height: 200px;}
+            .h3{height: 300px;}
+            .h4{height: 400px;}
+            .h5{height: 500px;}
+            @media screen and (max-width: 768px) {
+                nav{width: 100%; min-height: 50px;
+                border: 1px solid red; box-sizing: border-box;
+            }
+                section {width: 100%;}
+                .h1, .h2, .h3, .h4, .h5 {height: 100px;}
+                .h3, .h4 {width: 50%;}
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <nav>
+        </nav>
+        <section class="h1"></section>
+        <section class="h2"></section>
+        <section class="h3"></section>
+        <section class="h4"></section>
+        <section class="h5"></section> 
+        <footer></footer>
+    </body>
+</html>

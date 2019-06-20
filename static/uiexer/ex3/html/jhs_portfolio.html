@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <style>
+            body, html{margin:0px; padding:0px;}
+            .j-section{
+                padding: 50px 0px;
+                text-align: center;
+                background-color: rgba(128, 128, 128, 0.1); 
+            }
+            .j-section h3{font-size: 1.8rem; margin-bottom: 70px; padding-top: 20px; }
+            .j-section moP{font-size: 2.0rem; }
+            .j-section mo{padding: 0px 24px;}
+            .block{background:white; height: 110px; margin-top: -17px; padding: 3px}
+            .parent{
+                width: calc(100% / 3.7 ); display: inline-block;margin: 0px 13px; 
+            }
+            .animation{
+                height: 170px;
+            }
+            .j-padding{padding: 10px 0px;}
+            .j-opacity{ opacity:0.5}
+            .j-left{float: left; width: calc(100% / 3);}
+            .j-clear{clear:both}
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @media screen and (max-width:600px){
+                .parent{width:100%; margin-bottom: 20px}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="j-section">
+            <div class="j-padding">
+            <span  style="font-size: 25px;">PORTFOLIO<br><br></span>
+            <p class="moP j-padding" style="font-size: 20px;">What we have created</p>
+            </div>
+            <div class="mo">
+                <div class="parent">
+                <div><img src="https://www.w3schools.com/bootstrap/paris.jpg" style="width:100%">
+                <div class="block">
+                    <h4 class="j-opacity"><br>Paris<br><span style="font-weight: 100 "><br>Yes,we built Paris</span></h4>
+                </div>
+                </div>
+                </div>
+                
+                <div class="parent">
+                <div><img src="https://www.w3schools.com/bootstrap/newyork.jpg" style="width:100%">
+               <div class="block">
+                   <h4 class="j-opacity"><br>New York<br><span style="font-weight: 100 "><br>we built New York</span></h4>
+                </div>
+                </div>
+                </div>
+                
+                <div class="parent">
+                <div><img src="https://www.w3schools.com/bootstrap/sanfran.jpg" style="width:100%">
+                <div class="block">
+                <h4 class="j-opacity"><br>San Francisco<br><span style="font-weight: 100 "><br>Yes, San Fran is ours</span></h4>
+                </div>
+                </div>
+                </div>          
+            </div>
+             <div class="item active">
+       
+            
+            <h3> WHAT OUR CUSTOMERS SAY</h3>
+            <div class="j-left" style="line-height: 80px; color: #fd4108; font-size: 30px;">  <span class="glyphicon glyphicon-chevron-left"></span></div>
+            <div class="j-left">
+                <div>
+                    <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                </div>
+            </div>
+            <div class="j-left" style="line-height: 80px; color: #fd4108; font-size: 30px;"><span class="glyphicon glyphicon-chevron-right"></span></div>
+            <div class="j-clear"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            body, html{margin:0px; padding: 0px; background-color: black}
+            /*삭제할 부분*/
+           
+            /*navBar 내용*/
+            .j-nav{
+                top: 0;
+                width: 130px;
+                position:fixed;
+                background-color: black;        
+                z-index: 1;
+                height: 100%;
+            }
+            .j-navdiv{
+                padding-top: 10;
+                display:block;
+                background-color: black;
+                height: 80px;
+                text-align: center;
+                color: white;
+            }
+            .j-navimg{width: 100%;}
+            .j-nav img{
+                width:100%;
+                margin-bottom:-4px;
+            }
+            .j-navdiv i{
+             font-size:250%;
+            }
+            .j-opacityOn:hover{opacity: 0.8; background-color: gray;}
+            
+            .j-section{
+                color:white;
+                width: 86.0%;
+                position: relative;
+                left: 130px;
+            }
+            /*첫번째 박스*/
+            .j-center{text-align: center}
+            .j-max-width{max-width:980px;}
+            .j-section1{
+                margin:auto;
+                width:80%;}
+            .j-section1 img{width:100%;}
+            .j-section1 h1{font-size: 450%;}
+            /*두번째 박스*/
+            .k{}
+            
+            .k-section {
+             max-width: 980px; padding: 64px 0; margin: auto;
+            }
+            .k-footer {width: 100%; display: inline-block; margin: 0px;padding: 0px;}
+            .k-center {text-align: center;}
+            .k-left {float: left;}
+            
+            .k-databar {height: 30px; background-color: white;}
+            .k-data {height: 30px; background-color:grey;}
+            
+            .k-quater {width: calc(100%/4); display: block;}
+            .k-footnav {width: 100%}
+            
+             .k button {
+                padding: 20px;
+                border: 0px;
+                background-color: white;
+                padding-left: 40px;
+                position: relative;
+            }
+            .k button:hover {
+                cursor: pointer;
+                background-color: lightgrey;
+            }
+            .k button i {
+                background-image: url(icon.png);
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 18px;
+                left: 20px;
+            }
+            /*세번째 박스*/
+            .j-padding{ padding: 12px 70px;}
+            .j-margin{ margin:auto;}
+            .j-dis-in{display:inline-block}
+            .j-padding-12-24{padding: 12px 24px;}
+            .j-width100{width: 100%;}
+            .j-width40{width:48%}
+            .j-bc-gray{background-color: gray;}
+            .j-bc-darkgray{background-color: darkgray; border-bottom: 1px solid white; color:black}
+            .j-height120{height:120px; line-height: 120px;}
+            .j-height100{height:100px; line-height: 100px;}
+            .j-height80{height:80px; line-height: 80px;}
+            .j-left{float:left}
+            .y_hover{opacity: 0.5;}
+            .y_hover:hover{opacity: 1;}
+            /*네번째 박스*/
+            .y_h2 {color: white; border-bottom: 1px solid white; width: 200px; padding-bottom: 20px;}
+            .y_photo::after { content: ''; display: table; clear: both }
+            .y_photo div {
+                width: 50%;
+                float: left;
+            }
+            
+            .y_photo div img {
+                width: calc(100% - 20px);
+                margin: 10px;
+            }
+            /*다섯번째 박스*/
+            .y_section {
+                width: 100%;
+                color: darkgray;
+                padding 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .y_section p {color: white;}
+            
+            
+            h2 {border-bottom: 1px solid white;
+                width: 200px;
+                padding-bottom: 25px;
+                color: white;
+                display: inline-block;
+            }
+            
+            .y_left {float: left;}
+            .y_boxform {margin: 30px 0;  color: darkgray; display: inline-block;}
+            .y_boxform p {/*float: left;*/}
+            .y_boxform input {width: 100%; margin-bottom: 15px; height: 40px; color: darkgray;}
+            .y_boxform button {
+                border: none;
+                height: 40px;
+            }
+            .y_nav {margin: 150px 0;}
+            /*.y_nav i {float: left;}
+            .y_nav p {float: left;}*/
+            .clear{clear:both}
+            
+            @media screen and (max-width:800px) {
+                
+            }
+        </style>    
+    </head>
+    <body>
+        <!--navBar-->
+        <div class="j-nav">
+            <div>
+            <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" >
+            </div>
+            <div class="j-navdiv j-opacityOn">
+                <div><i class="fa fa-home j-imagesize"></i></div>
+                <div>HOME</div>
+            </div>
+            <div class="j-navdiv j-opacityOn">
+                <div><i class="fa fa-user"></i></div>
+                <div>ABOUT</div>
+            </div>
+            <div class="j-navdiv j-opacityOn">
+                <i class="fa fa-eye"></i>
+                <div>PHOTO</div>
+            </div>
+            <div class="j-navdiv j-opacityOn">
+                <i class="fa fa-envelope"></i>
+                <div>CONTACT</div>
+            </div>
+        </div>
+         <!--첫번째 섹션-->
+        <div class="j-section">
+            <div class="j-section1 j-max-width j-center">
+                <h1>I'm John Doe.</h1>
+                <p>Photographer and Web Designer.</p>
+                <img src="https://www.w3schools.com/w3images/man_smoke.jpg">
+            </div>
+        </div>
+        <!--두번째 섹션-->
+        <div class="j-section">
+            <div class="j-max-width j-padding j-margin">
+                <div class="k">
+            <section>
+                <article>
+                    <h2><font color="white">My Name</font></h2>
+                    <p><font color="grey">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</font></p>                
+                </article>
+                <h3><font color="white">My Skills</font></h3>
+                <p><font color="grey">Photography</font></p>
+                <div class="k-databar k-center">
+                <div class="k-data" style="width: 95%"></div>
+                </div>
+                <p><font color="grey">Web Design</font></p>
+                <div class="k-databar k-center">
+                <div class="k-data" style="width: 90%"></div>
+                </div>
+                <p><font color="grey">Photoshop</font></p>
+                <div class="k-databar k-center" style="margin-bottom: 20px">
+                <div class="k-data" style="width: 85%"></div>
+                </div>
+            </section>
+            <div class="k-footer k-center" style="background-color: white; color: black">
+            <div id="k-ootnav" class="k-quater k-left" >
+                <p><span>14+</span><br>Partners</p>
+            </div>
+            <div id="k-footnav" class="k-quater k-left">
+                <p><span>55+</span><br>Projects Done</p>
+            </div>
+            <div id="k-footnav" class="k-quater k-left">
+                <p><span>89+</span><br>Happy Clients</p>
+            </div>
+            <div id="k-footnav" class="k-quater k-left">
+                <p><span>150+</span><br>Meetings</p>
+            </div>
+            </div>
+            <button type="button"><i></i> Download Resume</button>
+        </div>        
+            </div>
+        </div>
+        <!--세번째 섹션-->
+        <div class="j-section">
+            <div class="j-max-width j-margin j-padding" >
+                <div class="j-width100" tyle="border:1px solid red;"><h2>My Price</h2>
+                </div>
+                    <div class="j-center j-width40 j-dis-in y_hover" >
+                        <div class="j-bc-gray j-center j-height100">Basic</div>
+                        <div class="j-bc-darkgray j-height80">Web Design</div>
+                        <div class="j-bc-darkgray j-height80">Photography</div>
+                        <div class="j-bc-darkgray j-height80">5Gb Storage</div>
+                        <div class="j-bc-darkgray j-height80">Mail Support</div>
+                        <div class="j-bc-darkgray j-height120">$10per month</div>
+                        <div class="j-bc-darkgray j-height100">Sign UP</div>
+                    </div>
+                    <div class="j-center j-width40 j-dis-in y_hover">
+                        <div class="j-bc-gray j-center j-height100">Pro</div>
+                        <div class="j-bc-darkgray j-height80">Web Design</div>
+                        <div class="j-bc-darkgray j-height80">Photography</div>
+                        <div class="j-bc-darkgray j-height80">50Gb Storage</div>
+                        <div class="j-bc-darkgray j-height80">Mail Support</div>
+                        <div class="j-bc-darkgray j-height120">$25per month</div>
+                        <div class="j-bc-darkgray j-height100">Sign UP</div>
+                    </div>
+                </div>
+            </div>
+        <!--네번째 섹션-->
+        <div class="j-section clear">
+            <div class="j-max-width j-padding j-margin">
+                <h2 class="y_h2">My Photo</h2>
+                    <div class="y_photo">
+                        <div>
+                            <img src="https://www.w3schools.com/w3images/wedding.jpg">
+                            <img src="https://www.w3schools.com/w3images/rocks.jpg">
+                            <img src="https://www.w3schools.com/w3images/sailboat.jpg">
+                        </div>
+                        <div>
+                            <img src="https://www.w3schools.com/w3images/underwater.jpg">
+                            <img src="https://www.w3schools.com/w3images/chef.jpg">
+                            <img src="https://www.w3schools.com/w3images/wedding.jpg">
+                            <img src="https://www.w3schools.com/w3images/p6.jpg">
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <!--다섯번째 섹션-->
+        <div class="j-section">
+            <div class="j-max-width j-padding j-margin">
+            <div class="y_section">
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-map-marker" style="font-size:36px"></i> Chicago, US</p>
+            <p><i class="fa fa-phone" style="font-size:36px"></i>  Phone: +00 151515</p>
+            <p><i class='fa fa-envelope' style='font-size:36px'></i> Email: mail@mail.com</p>
+            <div class="y_boxform">
+                    <p>Lets get in touch. Send me a message:</p>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Message">
+                    <button type="button" class="y_left">SEND MESSAGE</button>
+                
+            </div>
+                <div class="y_nav">
+                    <i class="fa fa-facebook-official" style="font-size:24px"></i>
+                    <i class="fa fa-instagram" style="font-size:24px"></i>
+                    <i class="fa fa-snapchat" style="font-size:24px"></i>
+                    <i class="fa fa-pinterest-p" style="font-size:24px"></i>
+                    <i class="fa fa-twitter" style="font-size:24px"></i>
+                    <i class="fa fa-linkedin" style="font-size:24px"></i>    
+                    <p>powered by<a> gudi</a></p>    
+                </div>    
+            </div>    
+            </div>
+            
+        </div>
+    </body>
+</html>

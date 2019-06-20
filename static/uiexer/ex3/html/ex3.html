@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="view-port" content="width=device-width, initial-scale=1.0">
+        <style>
+            html, body {padding: 0; margin: 0; width: 100%;}
+            .y_navbar {
+                background-color: #f4511e;
+                color: white;
+                height: 50px;
+                z-index: 9999;
+                position: fixed;
+                left: 0;
+                width: 100%;
+            }
+            .y_navdiv {width: 60%; 
+                margin-left: auto; 
+                margin-right: auto; 
+                line-height: 50px;
+            }
+            /*header 부분*/
+            .y_header {
+                background-color: #f4511e;
+                /*height: 300px;*/
+                padding: 100px 0;
+                color: white;
+                width: 100%;
+            }
+            /*.y_padding {padding-left: 50px;}*/
+            .y_header input {
+                height: 30px;
+                width: 300px;
+                padding: 5px;
+            }
+            .y_header button {border: none; height: 30px;}
+            .y_right {float: right};
+            .y_left {float: left;}
+            .y_height {height: 100px;}
+            .y_center {text-align: center;}
+            
+            /*.y_divwidth {width: calc(100% - 100px);}*/
+            /*1*/
+            .y_box1 {width: calc((100% / 5) * 3); padding: 45px; display: inline-block;}
+            .y_box2 {
+                widows: calc((100% / 5) * 1); 
+                display: inline-block;
+            }
+            
+            .button {
+                background-color: white;
+                border-radius: 4px;
+                height: 40px;
+            }
+            
+            @media screen and (max-width: 600px) {
+                .y_box1 {
+                    margin: 20px;
+                    padding: 0;
+                    width: 100%;
+                }
+                
+                .hide {display: none;}
+            }
+            
+            /*.y_footer {
+                background-color: white;
+                width: 100%
+            }*/
+        </style>
+    </head>
+    <body>
+        <!-- nav
+        <div class="y_navbar">
+            <div class="y_navdiv">
+            <a>LOGO</a>
+                <div class="y_right hide">
+                    <a>ABOUT</a>
+                    <a>SERVICES</a>
+                    <a>PORTFOLIO</a>
+                    <a>PRICING</a>
+                    <a>CONTACT</a>
+                </div>    
+            </div>    
+        </div>
+        -->
+        <div class="y_header">
+            <div class="y_center">
+                <h1>Company</h1>
+                <p>We specialize in blablabla</p>
+                <div>
+                    <input type="text" placeholder="Email Address">
+                    <button type="button">Subscribe</button>
+                </div>    
+            </div>
+        </div>
+            <div class="y_box1">
+                <h2>ABOUT COMPANY PAGE</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <br>
+                <button type="button" class="button">Get in Touch</button>
+            </div>
+            <div class="y_box2">
+                <img src="../img/img1.png">
+                </div>
+        <!--
+        <footer class="y_padding y_footer">
+            <div class="y_center">
+                <span></span>
+                <p>this thema made by <a>return = null</a></p>
+            </div>
+        </footer>
+        -->
+    </body>
+</html>

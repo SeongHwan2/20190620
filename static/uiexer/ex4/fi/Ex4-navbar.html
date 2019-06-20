@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body, html{padding: 0px; margin: 0px;}
+           
+            .boxOutline{
+                border: 1px solid red;
+                margin: 0 auto;
+                max-width: 1900px;
+            }
+            .boxleft{
+                border: 5px solid black;
+                position:fixed;
+                width: 250px;
+                height: 100vh;
+            }
+            .boxright{
+                width: calc(100% - 250px);
+                position: relative;
+                border: 5px solid blue;
+                left: 250px;
+            }
+            .boxright div{
+                position: relative;
+                border: 1px solid green;
+                height: 500px;
+            }
+            
+            /*첫번째번째 navbar 위에 위치*/
+            @media screen and (max-width: 1000px){
+                .boxleft{ width: 100%;
+                    height: 10vh;
+                }
+                
+                .boxright{
+                    width: 100%;
+                    left: 0px;
+                    top: 10vh;
+                }
+            }
+            /*두번째 navbar 위에 위치*/
+            @media screen and (max-width: 600px){
+                /*이건 내용물의 내용이므로 안넣어도 될듯*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boxOutline">
+            <div class="boxleft"> nav fixed</div>
+            <div class="boxright">
+                <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+       
+            </div>
+        </div>
+    </body>
+</html>

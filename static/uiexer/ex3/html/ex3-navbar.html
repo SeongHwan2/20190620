@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="view-port" content="width=device-width, initial-scale=1.0">
+        <style>
+            html, body {padding: 0; margin: 0;}
+            .y_navbar {
+                background-color: #f4511e;
+                color: white;
+                height: 50px;
+                z-index: 9999;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 0 20%;
+            }
+            
+            .y_navbar div {
+                height: 50px;
+            }
+    
+            .y_ndiv2{
+                width: 60%;
+            }
+            
+            .y_ndiv2 h1 {
+                width: 130px;
+                font-size: 1.4rem;
+                margin: 0;
+                padding-top: 5px;
+                height: calc(100% - 5px);
+                float: left;
+            }
+            
+            .y_ndiv2 p {
+                display: inline-block;
+                font-size: 0.9rem;
+            }
+            
+            .y_ndiv2 div {
+                float: right;
+            }
+            
+            .y_content {
+                width: 100%;
+                border: 1px solid red;
+            }
+            
+            .y_content div {
+                height: 500px;
+                border: 1px solid blue;
+            }
+            
+            @media screen and (max-width: 680px) {
+                .y_ndiv2 div {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="y_navbar">
+            <div class="y_ndiv2">
+                <h1>Logo</h1>
+                <div>
+                    <p>ABOUT</p>
+                    <p>SERVICES</p>
+                    <p>PORTFOLIO</p>
+                    <p>PRICING</p>
+                    <p>CONTACT</p>
+                </div>    
+            </div>
+        </div>
+        <!--
+        <div class="y_content">
+            <div class="y_div1"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        -->
+    </body>
+</html>

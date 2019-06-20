@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css? family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+             html, body {margin: 0; padding: 0;}
+            .k-wrap {
+                width: 95%;
+                margin-left: 2.5%;
+            }
+            
+            .k-text {
+                text-align: center;
+            }
+
+            .k-pblock {
+                width: calc(85%/3);
+               /*height: 57vh;*/
+                display: inline-block; 
+                 border: 1px solid #f4511e;
+                box-sizing: border-box;
+                margin-left: 2.5%;
+            }
+            
+            .k-pblock:hover{
+                cursor: pointer;
+                box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.4);
+            }
+            
+            .k-pb1 {
+               /* height: 13vh;*/
+                color: white;
+                background-color: #f4511e;
+            }
+            
+            .k-pb2 {
+               /* height: 22vh;*/
+                color: grey; 
+                padding: 6% 6%;
+            }
+            
+            .k-pbb {
+                border-bottom: 1px solid lightgrey;
+                box-sizing: border-box;              
+            }
+            
+             .k-pb1 span {
+                line-height: 135px;
+            }
+            
+            .k-pblock button {
+                color:white;
+                padding: 15px;
+                border: 0px;
+                background-color: #f4511e;
+                padding-left: 15px;
+                position: relative;
+                border-radius: 5px;
+            }
+            .k-pblock button:hover {
+                cursor: pointer;
+                background-color: white;
+                color: #f4511e;
+                border: 1px solid #f4511e;
+                box-sizing: border-box;
+            }
+            
+            @media only screen and (max-width: 600px){
+                .k-pblock {
+                    width: 85%;
+                    margin-top: 10%;
+                }
+                .k-pblock button {       
+                padding: 10px;
+                border: 0px;
+                padding-left: 140px;
+                padding-right: 140px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>                
+        <div class="k-wrap k-text">
+            <h2 style="font-size: 25px"><b>PRICING</b></h2>
+            <p style="font-size: 20px; line-height:60px;">Choose a payment plan that works for you</p>
+            <div class="k-pblock">
+                <div class="k-pb1"><span style="font-size: 35px">Basic</span></div>
+                <div class="k-pb2 k-pbb"><p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p></div>
+                <div class="k-pb2"><h3>$19</h3>
+          <h4>per month</h4>
+          <button type="button">Sign Up</button></div>
+            </div>
+           <div class="k-pblock">
+               <div class="k-pb1"><span style="font-size: 35px">Pro</span></div>
+                <div class="k-pb2 k-pbb"><p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p></div>
+                <div class="k-pb2"><h3>$29</h3>
+          <h4>per month</h4>
+          <button type="button">Sign Up</button></div>
+            </div>
+            <div class="k-pblock">
+                <div class="k-pb1"><span style="font-size: 35px">Premium</span></div>
+                <div class="k-pb2 k-pbb"><p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p></div>
+                <div class="k-pb2"><h3>$49</h3>
+          <h4>per month</h4>
+          <button type="button">Sign Up</button></div>
+            </div>           
+        </div>
+    </body>
+</html>

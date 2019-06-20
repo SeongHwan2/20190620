@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{box-sizing: border-box;}
+            header{background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+                
+            }
+            #home, #portfolio, #contact {/*배경 이미지 높이를 스크린과 같게 정의*/
+                /*이미지 반복 제거*/
+                   background-repeat: no-repeat;
+                /*배경이미지 사이즈 다 덮도록 처리*/
+                   background-size: cover;
+                /*배경이미지를 중앙에 오도록 정의*/
+                   background-position: center;
+                /*스크롤시 화면 고정정의*/
+                   background-attachment: fixed;
+                /*화면 투명도 정의*/
+                   opacity: 0.7;
+            }
+            nav {height: 43px; background-color: transparent; display: inline-block;}
+            a{text-decoration: none; padding: 8px, 16px; }
+            a:hover{background-color: darkgray;}
+            #home {min-height: 100vh;}
+            #about{height: 100vh;}
+            #portfolio{height: 400px;
+                   background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+            }
+            #contact {height: 400px;
+                      background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+            }
+        </style>
+    </head>
+    <body>
+        <header id="home">
+            <nav>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </header>
+        <section id="about">
+            <article>about</article>
+        </section>
+        <section id="portfolio">portfolio</section>
+        <section id="contact">contact</section>
+        <footer>footer</footer>
+    </body>
+</html>

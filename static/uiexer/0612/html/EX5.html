@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./demo_files/w3.css">
+         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link rel="stylesheet" href="./demo_files/css">
+        <style>
+            html, body {padding: 0; margin: 0; font-family: "Raleway", sans-serif; background-color: #eaeaea;}
+            
+            .k-frame {
+                margin: 0 auto;
+                max-width: 1600px;
+                left: 300px;
+            }            
+                       
+            .k-nav {
+                background-color: white;
+                width: 300px;
+                height: 100%;
+                position: fixed;
+                z-index: 1;
+                text-align: center;
+                color: #757575;
+                
+            }
+            .k-section {
+                width: calc(100% - 300px);
+                position: relative;
+                left: 300px;
+            } 
+            .k-nav h3 {
+                margin: 10px 10px;
+                padding: 64px 0px;
+                font-size: 24px;
+            }
+            .k-nav a {
+                padding: 8px 16px;
+                display: inline-block;
+                font-size: 15px;
+                text-decoration: none;
+                width: 268px;
+                color: #757575;
+            }
+            .k-nav a:hover{
+                cursor: pointer;
+                color: black;
+                background-color: lightgray;
+            }
+            .k-hide {display: none;}
+            .k-mhide {}
+                        
+            
+            .j-text{ text-align: center;
+                color: white;
+            }
+             .j-padding-12-24{
+                padding: 0px 0px;
+            }
+            
+            .j-section1{
+                text-align: center;
+                color: black;
+                padding: 10px 0px;
+                max-width: 760px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            input{
+                margin: 12px 0px;
+                width: 100%;
+                height: 40px;
+            }
+            .j-button1{
+                text-align: center;
+                width: 100%;
+                 height: 40px;
+                background-color: black; color: white;
+                border: 0px;
+                font-size: 15px;
+            }
+           
+            .j-container{
+                padding: 10px 10px;
+                background-color: dimgray;
+            }
+            .j-section{
+                max-width: 760px;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .j-section button{
+                background-color: white;
+                border: 0px;
+                margin:40px 0px;
+                height: 50px;
+                width: 30%;
+            }
+            .j-padding-12-24{
+                padding: 12px 30px;
+            }
+            .j-border-bottom{
+                border-bottom: 1px solid white;
+            }
+            .j-lettersapce{
+                letter-spacing: 5px;
+            }
+            .j-data-bar{
+                height: 35px;
+                width: 100%;
+                background-color: white;
+            }
+            .j-data95{
+                line-height: 30px;
+                color:black;
+                height: 35px;
+                width: 95%;
+                background-color: #acacac;
+            }
+             .j-data85{
+                 line-height: 30px;
+                 color:black;
+                height: 35px;
+                width: 85%;
+                background-color: #acacac;
+            }
+            .j-data80{
+                 line-height: 30px;
+                 color:black;
+                height: 35px;
+                width: 80%;
+                background-color: #acacac;
+            }
+            .j-boxleft{
+                width: 48%;
+                float: left;
+                padding-right: 13px;
+            }
+            .j-boxright{
+                width: 48%;
+                padding-left: 13px;
+                float: left;
+                text-align: center;
+            }
+            .j-boxleft div{
+               width: 100%;
+                text-align: center;
+            }
+            
+            .j-boxbig{
+                height: 100px;
+                background-color: black;
+                font-size: 30px; color:white;
+                
+            }
+            .j-boxsmall{
+                line-height: 60px;
+                height: 60px;
+                background-color: white;
+                font-size: 15px; color:black;
+                border-bottom: 1px solid #cccccc;
+            }
+            .j-boxmid{
+                height: 120px;
+                background-color: white;
+                font-size: 20x; color:black;
+                border-bottom: 1px solid #cccccc;
+            }
+            .j-boxlast{
+                background-color: #dddddd;
+                font-size: 30px; color:black;
+            }
+            
+            
+            .j-opacity { opacity : 0.8;}
+            .j-opacity:hover { opacity : 1.0;}
+            .j-box-clear{ clear : both }
+            
+            
+                      /*공통 사용*/
+            .y_left {float: left;}
+            .y_block {display: inline-block;}
+            
+            
+            /*사진부분*/
+            .y_photo {
+                width: 100%;
+                height: calc(100% - 38px);
+            }
+            
+            .y_photowidth {
+                width: calc(100% / 3);
+            }
+            
+            .y_photowidth img {
+                width: 100%;
+                margin-top: -6px;
+            }
+            
+            /*페이지 표시 부분*/
+            .y_paging {
+                clear: both;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .y_paging a {
+                padding: 8px 16px;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .y_paging a:hover {
+                background-color: black;
+                color: white;
+            }
+            
+            /*footer*/
+            .y_footdiv {
+                height: 270px;
+                background-color: gray;
+            }
+            
+            .y_footdiv div {
+                float: left;
+                background-color: gray;
+            }
+            
+            .y_33w {width: calc((100% / 3) - 14px);}
+            
+            .y_33w img {
+                width: 50px;
+            }
+            
+            .y_33w ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .span1 {
+                position:relative;
+                top: -5px;
+                padding: 5px 15px ;
+                background-color: black;
+                height: 0px;
+                color: white;
+            } 
+            .span {
+                line-height: 30px;
+                background-color: #525252;
+                color: white;
+            } 
+            
+            .li {
+                border-bottom: 1px solid #ddd;
+            }
+            
+            .y_indiv {display:inline-block;}
+            
+            .y_left {float: left;}
+            .j-background{background-color: dimgray}
+            /*처음 여백 후 없앰*/
+            @media screen and (max-width: 2000px){
+                .j-section{
+                }
+            }
+            @media screen and (max-width: 1000px) {
+                .k-nav a  {display: none;}
+                .k-nav h3 {margin: 0; float: left; padding: 16px 20px;}
+                .k-nav {width: 100%; height: 14vh;}
+                .k-hide {display: inline;}
+                .k-mhide {display: none;}
+                .k-section {width: 100%; top: 14vh; left: 0;}
+                .j-boxright { width: 100%; padding-left: 0px;}
+                .j-boxleft { width: 100%;padding-right: 0px; padding-bottom : 10px;}
+                 .y_footdiv {
+                    height: 400px;
+                    overflow: hidden;
+                }
+                
+            }
+            @media screen and (max-width : 600px){
+                .j-boxright { width: 100%; padding-right: 0px;}
+                .j-boxleft { width: 100%;padding-right: 0px; padding-bottom : 10px;}
+                .y_photowidth {width: 100%;} 
+                
+                /*footer*/
+               
+                .y_33w {width: 100%; margin: 30px 0;}
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="k-frame">
+            <div class="k-nav">
+                <h3 class="k-mhide"><b>SOME<br>NAME</b></h3>
+                <h3 class="k-hide"><b>SOME NAME</b></h3>
+                <a href=""><b>PORTFOLIO</b></a>
+                <a href="#"><b>ABOUT ME</b></a>
+                <a href="#"><b>CONTACT</b></a>
+            </div>
+            <div class="k-section">
+                
+                  <div class="y_photo">
+            <div class="y_photowidth y_left">
+                <img src="https://www.w3schools.com/w3images/natureboy.jpg">
+                <img src="https://www.w3schools.com/w3images/girl_mountain.jpg">
+                <img src="https://www.w3schools.com/w3images/girl.jpg">
+            </div>
+            <div class="y_photowidth y_left">
+                <img src="https://www.w3schools.com/w3images/boy.jpg">
+                <img src="https://www.w3schools.com/w3images/man_bench.jpg">
+                <img src="https://www.w3schools.com/w3images/natureboy.jpg">
+            </div>
+            <div class="y_photowidth y_left">
+                <img src="https://www.w3schools.com/w3images/girl.jpg">
+                <img src="https://www.w3schools.com/w3images/girl_train.jpg">
+                <img src="https://www.w3schools.com/w3images/closegirl.jpg">
+            </div>
+        </div>
+        <div class="y_paging">
+            <a href="#"><i class='fas fa-angle-left' style='font-size:15px'></i></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#"><i class='fas fa-angle-right' style='font-size:15px'></i></a>
+        </div>
+                
+                <div class="j-container" >
+            <div class="j-section " style="color: white;" >
+                <h2 class="j-text">About Me</h2>
+                <div style="text-align: center"><img src="avatar_hat.jpg" style="width: 90%"></div>
+                <div class="j-border-bottom">
+                    <p style="font-size: 24px">My Name</p>
+                    <p style="font-size: 18px">Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p style="font-size: 18px">mail: example@example.com</p>
+                    <p style="font-size: 18px">tel: 5353 35531</p>
+                </div>
+                <div class="j-border-bottom">
+                    <p style="font-size: 24px">Technical Skills</p>
+                    <p class="j-lettersapce" style="font-size: 18px">Photography</p>
+                    <div class="j-data-bar j-text">
+                        <div class="j-data95"> 95%</div>
+                    </div>
+                    <p class="j-lettersapce" style="font-size: 18px">Web Design</p>
+                    <div class="j-data-bar">
+                        <div class="j-data85 j-text"> 85%</div>
+                    </div>
+                    <p class="j-lettersapce" style="font-size: 18px">Photoshop</p>
+                    <div class="j-data-bar j-text">
+                        <div class="j-data80"> 80%</div>
+                    </div>
+                    <div>
+                        <button type="button" style="font-size: 20px">Download Resume</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <p style="font-size: 24px">How much I charge</p>
+                    <div class="j-boxleft j-opacity" >
+                        <div class="j-boxbig" ><div style="padding: 30px 0px;"><strong>Basic</strong></div></div>
+                        <div class="j-boxsmall">Web Design</div>
+                        <div class="j-boxsmall">Photography</div>
+                        <div class="j-boxsmall">5GB Storage</div>
+                        <div  class="j-boxsmall">Mail Support</div>
+                        <div class="j-boxmid"><div style="padding-top: 20px"><strong style="font-size: 30px;">$ 10</strong><p> per month</p></div></div>
+                        <div class="j-boxlast"><button type="button" style="font-size: 20px; margin: 20px;">sign up</button></div>
+                    </div>
+                        
+
+                    
+                    
+                    
+                    <div class="j-boxright j-opacity">
+                        <div class="j-boxbig" ><div style="padding: 30px 0px;"><strong>Pro</strong></div></div>
+                        <div class="j-boxsmall">Web Design</div>
+                        <div class="j-boxsmall">Photography</div>
+                        <div class="j-boxsmall">5GB Storage</div>
+                        <div  class="j-boxsmall">Endless Support</div>
+                        <div class="j-boxmid"><div style="padding-top: 20px"><strong style="font-size: 30px;">$ 25 </strong><p>per month</p></div></div>
+                        <div class="j-boxlast"><button type="button" style="font-size: 20px; margin: 20px;">sign up</button></div>
+                    </div>
+                    <div class="j-box-clear"></div>
+                </div>
+            
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <div class="j-container" style="background-color: white; padding: 0px 30px;" >
+            <div class="j-section1" >
+                <p style="font-size: 24px;">Contact Me</p>
+                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+                <div style="text-align:left">
+                    <div>
+                    Name
+                    <input type="text">
+                    </div>
+                    <div>
+                    Email
+                    <input type="text">
+                    </div>
+                    <div>
+                    Message
+                    <input type="text">
+                    </div>
+                <button class="j-button1"> Send Message</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div style="background-color: dimgray">
+            <div class="y_footdiv" style="padding: 0px 30px;">
+            <div class="y_33w">
+                <p style="font-size: 24px;">INFO</p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="y_33w" style="padding: 0px 20px;">
+                <p  style="font-size: 24px;">BLOG POSTS</p>
+                <ul>
+                    <li style="padding:10px 0px; border-bottom: 1px solid white" >
+                        <img src="https://www.w3schools.com/w3images/workshop.jpg" class="y_left" style="height: ">
+                        
+                        <span>Lorem</span>
+                        <br>
+                        <span >Sed mattis nunc</span>
+                    </li>
+                    <li style="padding:10px 0;">
+                        <img src="https://www.w3schools.com/w3images/gondol.jpg" class="y_left">
+                        
+                        <span >Ipsum</span>
+                        <br>
+                        <span>Praes tinci sed</span>   
+                    </li>
+                </ul>
+            </div>
+            <div class="y_33w">
+                <p  style="font-size: 24px;">POPULAR TAGS</p>
+                <p style="font-size: 15px;" >
+                    <span class="span1" >Travel</span>
+                    <span class="span" style="padding: 0px 10px;">New York</span>
+                    <span class="span" style="padding: 0px 10px;">London</span>
+                    <span class="span" style="padding: 0px 10px;">IKEA</span>
+                    <span class="span" style="padding: 0px 10px;">NORWAY</span>
+                    <span class="span" style="padding: 0px 10px;">DIY</span>
+                    <span class="span" style="padding: 0px 10px;">Ideas</span>
+                    <span class="span" style="padding: 0px 10px;">Baby</span>
+                    <span class="span" style="padding: 0px 10px;">Family</span>
+                    <span class="span" style="padding: 0px 10px;">News</span>
+                    <span class="span" style="padding: 0px 10px;">Clothing</span>
+                    <span class="span" style="padding: 0px 10px;">Shopping</span>
+                    <span class="span" style="padding: 0px 10px;">Sports</span>
+                    <span class="span" style="padding: 0px 10px;">Games</span>
+                </p>
+            </div>
+        </div>
+        
+        </div>
+        </div>
+            
+        </div>
+    </body>
+</html>

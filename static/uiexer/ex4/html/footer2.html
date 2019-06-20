@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="view-port" content="width=device-width, initia-scale=1.0">
+        <style>
+            html, body {padding: 0; margin: 0;}
+            
+            .y_footdiv {
+                height: 250px;
+                background-color: darkgray;
+            }
+            
+            .y_footdiv div {
+                float: left;
+                background-color: darkgray;
+            }
+            
+            .y_33w {width: calc(100% / 3);}
+            
+            .y_33w img {
+                width: 50px;
+            }
+            
+            .y_33w ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .span {
+                background-color: black;
+                color: white;
+            } 
+            
+            .li {
+                border-bottom: 1px solid #ddd;
+            }
+            
+            .y_indiv {display:inline-block;}
+            
+            .y_left {float: left;}
+            
+            @media screen and (max-width: 600px) {
+                .y_33w {width: 100%; margin: 30px 0;}
+                .y_footdiv {
+                    height: 600px;
+                    overflow: hidden;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+ <div class="y_footdiv">
+            <div class="y_33w">
+                <p>INFO</p>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="y_33w">
+                <p>BLOG POSTS</p>
+                <ul>
+                    <li class="li">
+                        <!--
+                        <img src="https://www.w3schools.com/w3images/workshop.jpg" class="y_left">
+                        -->    
+                        <span>Lorem</span>
+                        <br>
+                        <span >Sed mattis nunc</span>
+                    </li>
+                    <li>
+                        <!--
+                        <img src="https://www.w3schools.com/w3images/gondol.jpg" class="y_left">
+                        -->
+                        <span>Ipsum</span>
+                        <br>
+                        <span>Praes tinci sed</span>   
+                    </li>
+                </ul>
+            </div>
+            <div class="y_33w">
+                <p>POPULAR TAGS</p>
+                <p>
+                    <span class="span">Travel</span>
+                    <span class="span">New York</span>
+                    <span class="span">London</span>
+                    <span class="span">IKEA</span>
+                    <span class="span">NORWAY</span>
+                    <span class="span">DIY</span>
+                    <span class="span">Ideas</span>
+                    <span class="span">Baby</span>
+                    <span class="span">Family</span>
+                    <span class="span">News</span>
+                    <span class="span">Clothing</span>
+                    <span class="span">Shopping</span>
+                    <span class="span">Sports</span>
+                    <span class="span">Games</span>
+                </p>
+            </div>
+        </div>
+        <!--
+        <div style="clear: both"></div>
+        -->
+    </body>
+</html>

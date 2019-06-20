@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            .padding-64-12{padding: 64px 12px;}
+            .padding-24{padding: 24px 0px;}
+            .padding{padding:  0px 20px;}
+            .padding-8{padding: 0px 8px;}
+            
+            .disblock{display: inline-block}
+            .contants{max-width: 980px; margin: auto;}
+            .center{text-align: center}
+            .w3-input{height:36px; border:1px solid #ccc; width: 100%}
+            
+            .margin{margin: 20px 0;}
+            .c2{display:grid;
+                grid-template-columns: 1fr 2fr;}
+            
+            .name{ grid-area: name;}
+            .email{grid-area: email;}
+            .sendmessage{grid-area: sendmessage}
+            
+            .right{float: right;}
+            .left{float: left}
+            .clear{clear:both}
+            .half{width: 100%;}
+            .full{width:100%;}
+            @media screen and (max-width:600px){
+                .c2{display: grid;grid-template-columns: 1fr; float: left}
+                .w40{width: 100%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contants padding-64-12">
+            <div class="center">
+                <h2>WHERE I WORK</h2>
+                <p>I'd love your feedback!</p>
+            </div>
+            <div class="c2 padding-24">
+                <div class="padding" >
+                    <img src="https://www.w3schools.com/w3images/map.jpg" align="left" style="width: 100%;">
+
+                </div>
+            <div class="padding">
+                <span style="font-size: 24px">Chicago,US</span><br>
+                <span style="font-size: 24px">Phone:+00 151515</span><br>
+                <span style="font-size: 24px">Email:mail@mail.com</span><br>
+                <p>Swing by for a cup of , or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div style="margin:0 -16px 8px -16px">
+                    <div class="left disblock" style="width:45%; margin:8px">
+                    <input class="w3-input" type="text" placeholder="Name" required="" name="Name">
+                    </div>
+                    <div class="left disblock" style="width:45%; margin:8px">
+                    <input class="w3-input" type="text" placeholder="Email" required="" name="Email">
+                    </div>
+                    <div class="left" style="width:94%;margin:8px">
+                    <input class="w3-input" type="text" placeholder="Message" required="" name="Message">
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                    <button class="right" type="submit" style="background-color: black; color: white; height: 40px; border : 0px">
+                    <i class="fa " ></i> SEND MESSAGE
+                    </button>
+                </form>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>

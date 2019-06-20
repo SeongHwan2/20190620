@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UI연습</title>
+        <style>
+            html, body {padding: 0; margin: 0;/*초기값 설정*/}
+            .l1 {
+                width: 40%;
+                height: 100vh;
+                background-image: url(https://www.w3schools.com/w3images/profile_girl.jpg);
+                background-position: center;
+                background-size:cover;
+                position: fixed;
+                top: 0;
+            }
+            
+            .r1 {width: 60%;
+                height: 200vh;
+                background-color: darkgray;
+                position: absolute;
+                top: 300px;
+                right: 0;
+                text-align: center;
+            }
+            
+            .r0 {
+                padding-top: 100px;
+                width: 60%;
+                height: 200px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                text-align: center;
+                background-color:darkgray;
+                
+            }
+            
+            .r0 h1 {
+                margin-top: 0;
+                font-size: 4rem;
+            }
+            
+            .r1 button {
+                width : 200px;
+                padding: 20px;
+                border: 0px;
+                background-color:darkgray;
+                padding-left: 40px; 
+                position: relative;
+            }
+            
+            .r1 button i {
+                background-image: url(icon.png);
+                width: 18px;
+                height: 18px;
+                /*position absolute를 썻으므로 top과 left 위치값 주기*/
+                position: absolute;
+                top: 16px;
+                left: 33px;
+            }
+            .r1 button:hover{
+                cursor: pointer;
+                background-color:#767373;
+            }
+            
+            .port {width: 100%;
+                   background-color: black;
+            }
+            .port div {
+                /*div가 두개 이므로 둘로 나눠주기 width */
+                float: left;
+                width: 50%;
+                
+            }
+            
+            .port div img {
+                /* margin 준만큼 width 값 조절 해주기 */
+                width: calc(100% - 10px);
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="r0">
+            <h1>Jane Doe</h1>
+            <p>Photographer and Web Designer.</p>
+        </div>    
+        <div class="l1"></div>
+        <div class="r1">
+        <button type="button"><i></i> Download Resume</button>
+        <div class="port">
+            <div>
+                <img src="https://www.w3schools.com//w3images/wedding.jpg">
+                <img src="https://www.w3schools.com//w3images/rocks.jpg">
+                <img src="https://www.w3schools.com//w3images/sailboat.jpg">
+            </div>
+            <div>
+                <img src="https://www.w3schools.com//w3images/underwater.jpg">
+                <img src="https://www.w3schools.com//w3images/chef.jpg">
+                <img src="https://www.w3schools.com//w3images/wedding.jpg">
+                <img src="https://www.w3schools.com//w3images/p6.jpg">
+            </div>
+        </div>
+        </div>
+            
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="view-port" content="width=device-width initia-scale=1.0">
+        <style>
+            /*section파트 크기제한을 위해 max-width 설정, 가로가운데 정렬을 위해서 section 파트의 margin을 auto로 설정 */
+            /* width를 설정해 놓은뒤에 margin을 auto로 주면 가로 가운데 정렬이 가능하다고 합니다.*/
+            section {color: rgb(119, 119, 119); max-width: 980px; padding: 64px 0; margin: auto;}
+            .footer{width: 100%; display: inline-block; margin: 0px;padding: 0px;}
+            /*중복해서 쓰는내용*/
+            .center {text-align: center; }
+            .padding-12-24{padding: 12px 24px;}
+            
+            /*이미지 내용 */
+            .img-opacity{ opacity: 0.7; /*이미지 투명도 조절*/}
+            .img:hover {opacity : 1;} /*커서 올렸을때 이미지 투명도 조절*/
+            .wrapper {display:grid;
+            grid-template-columns: 1fr 1fr}
+            
+            /*하단 내용 */
+            .a_name {height: 27px; }
+            .databar {height: 35px;background-color:#f7f4f4;}
+            .data {background-color: black; height: 35px; color: white;}
+            .quater {width: calc(100% / 4); display: block;}
+            .left{float:left;}
+            
+            
+            @media screen and (max-width: 630px) {
+                /* 화면이 작아지면서 글이 사라지는 효과 주기*/
+                .wrapper{display: flex}
+                .display {display: none;}
+                #footnav {width: 100%}
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            
+            <!--  -->
+            <article>
+                <h3 class="center">ABOUT ME</h3>
+                <!-- 문단 태그인 <p>태그 사용,내용 강조위해 em 태그 사용-->
+                <p class="center"><em>I love photography</em></p>
+                <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                
+                <!-- 이미지 부분 --> 
+                <div class="wrapper">
+                <div class="padding-12-24 " >
+                <p class="center">My Name</p>
+                <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" class="img-opacity img " width="100%" >
+                </div>
+                <div class="padding-12-24 top-bottom-margin display">    
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                   </p>
+                </div>     
+                </div>
+            </article>
+            
+             <!-- 푸터 위에 부분 --> 
+            <p class="center padding-12-24"><i>Im really good at:</i></p>
+            <!-- 게이지바 부분 --> 
+            <p class="a_name"><i>Photography</i></p>
+            <div class="databar center">
+                <!-- 게이지 표시위해 width로 조정  -->
+                <div class="data" style="width: 90%">90</div>
+            </div>
+            <p class="a_name"><i>Web Design</i></p>
+            <div class="databar center">
+                <div class="data" style="width: 80%">80</div>
+            </div>
+            <p class="a_name"><i>Photoshop</i></p>
+            <div class="databar center">
+                <div class="data" style="width: 75%">75</div>
+            </div>
+        </section>
+        
+        
+        
+        <!-- 푸터 부분 --> 
+        <div class="footer center" style="background-color: black; color: white">
+                <div id="footnav" class="quater left" >
+                    <p><span>14+</span><br>
+                    Partners</p>
+                </div>
+                <div id="footnav" class="quater left">
+                    <p><span>55+</span><br>
+                    Projects Done</p>
+                </div>
+                <div id="footnav" class="quater left">
+                    <p><span>89+</span><br>
+                    Happy Clients</p>
+                </div>
+                <div id="footnav" class="quater left">
+                    <p><span>150+</span><br>
+                    Meetings</p>
+                </div>
+         </div>
+    </body>
+</html>

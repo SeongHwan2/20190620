@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./fontello-c30f7b78/css/fontello.css">
+        <title>트리</title>
+        <style>
+            html, body {margin: 0; padding: 0;}
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            li {
+                height: 30px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            img {
+                height: 100%
+            }
+            
+            label::before {
+                content: '\e800';
+                font-family: "fontello";
+                padding: 0 10px;
+            }
+            
+            label {
+                cursor: pointer;
+            }
+            
+            .home {
+                display: none;
+            }
+            
+            #home input[type="checkbox"]{
+                display: none;
+            }
+            
+            #home input[type="checkbox"]:checked~ul {
+                display: block;
+            }
+            
+            #home input[type="checkbox"]:checked+label::before{
+               content: '\e801';
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li id="home">
+                <input type="checkbox" id="iHome">
+                <label for="iHome">홈</label>
+                <ul class="home">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </li>
+           
+        </ul>
+    </body>
+</html>

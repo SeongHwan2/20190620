@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SPA</title>
+        <link rel="stylesheet" href="commons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+            //console.log(location, location.hash);
+            
+            $(document).ready(function(){
+               $("#title").text(location.hash);
+               $("li").click(function(e){ //첫번째 실행
+                   e.preventDefault(); //화면전환 막는것(a href), href를 막으면 url 변화까지 막히기 때문에
+                                       // 밑에 hash값을 따로 받아와서 hash값에 저장해준뒤 글씨까지 바꿔줌            
+                   location.hash = $(this).children("a").attr("href");
+                   $("#title").text(location.hash);     
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul> <!-- 2번째 실행 -->
+                <li><a href="#m1">page1</a></li>
+                <li><a href="#m2">page2</a></li>
+                <li><a href="#m3">page3</a></li>
+            </ul>
+        </nav>
+        <div style="height: 500px;">
+            <h1>Main</h1>
+        </div>
+        <div style="height: 500px;">
+            <h1 id="title"></h1>
+        </div>
+        <div style="height: 1000px;">
+            <h1>---------</h1>
+        </div>        
+    </body>
+</html>

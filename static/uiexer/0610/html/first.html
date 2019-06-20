@@ -1,0 +1,336 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /*top*/
+            html, body{padding:0px; margin: 0px;}
+            body, html {/*높이를 줘야 배경이 들어감 바로 적용*/
+                height: 100%;
+                color: #777;
+                line-height: 1.8;
+            }
+            .container{display:flex;
+                        justify-content: center;
+                        align-items: center}
+            /*displayflex는 정렬 하는 도구 이다. justify-content는 content간의 수평 구조 를 정력 , align-items는 item간 행간에 정렬을 뜻한다.*/
+            .logodiv{text-align: center;
+                    background-color: black; color:white;
+                    width: 450px;
+                    line-height: 60px;
+                    height: 60px;
+                    }
+            /*텍스트 정렬을 위한 내용이다 line-height는 안에 내용물의 높이를 정한다. 보통 height와 line-height 를 같은 숫자로 작성해 주고 가운데 정렬을 한다. */
+            
+            .button{display:inline-block;padding:8px 16px;color: dimgray;cursor:pointer;}
+            /* 블럭을 버튼 형식으로 만들려는 방식이다. padding 8 16을 주고  */
+            .top{position:fixed;width: 100%; z-index: 1; }
+            /*포지션 픽스를 하면 그냥 화면에서 고정됨. 스크롤을 내려도 고정됨, z-index는 숫자로 포현하며 position으로 정렬된것을 표현하는 순서를 정함 숫자가 높을수로 위로 올라옴 파워포인트에서 사용하던 위로 올리기랑 똑같다고 보면 됨 그런데 중요한게 위에 올라오면 기능도 다 구형이 된다는 것임 그래서 꼭 고정 값된 바에 기능을 구현해 놨다고 하면 꼭 z-index값을 넣어서 사용하는 것이 좋음.*/
+            .wide{letter-spacing: 4px;}
+            .textdeco{text-decoration:none;}
+            
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            .bgimg-1{
+                background-image :url('https://www.w3schools.com/w3images/parallax1.jpg');
+                min-height:100%;
+                opacity: 0.7;
+            }
+            .opacityOn{opacity: 0.7;}
+            .opacityOff:hover {opacity:1.0; color:black; background-color: darkgrey; }
+            .right{float:right}
+            .hover-red:hover{opacity:1.0; color:white; background-color: red}
+            .barBackGround{background-color: gray;}
+            .fontlarge{font-size: 23px;}
+            .hide{}
+            @media screen and (max-width: 600px){
+                .hide{display : none;}
+                .logodiv{width: 250px;}
+            }
+             /*section파트 크기제한을 위해 max-width 설정, 가로가운데 정렬을 위해서 section 파트의 margin을 auto로 설정 */
+            /* width를 설정해 놓은뒤에 margin을 auto로 주면 가로 가운데 정렬이 가능하다고 합니다.*/
+            .section {color: rgb(119, 119, 119); max-width: 980px; padding: 64px 0; margin: auto;}
+            .footer{width: 100%; display: inline-block; margin: 0px;padding: 0px;}
+            /*중복해서 쓰는내용*/
+            .center {text-align: center;}
+            .padding-12-24{padding: 12px 24px;}
+            
+            /*이미지 내용 */
+            .img-opacity{ opacity: 0.7; /*이미지 투명도 조절*/}
+            .img:hover {opacity : 1;} /*커서 올렸을때 이미지 투명도 조절*/
+            .wrapper {display:grid;
+            grid-template-columns: 1fr 1fr}
+            
+            /*하단 내용 */
+            .a_name {height: 27px; }
+            .databar {height: 35px;background-color:#f7f4f4;}
+            .data {background-color: black; height: 35px; color: white;}
+            .quater {width: 25%;}
+            .left{float:left;}
+            
+            /*conMid*/
+            .content{max-width: 980px; margin-left: auto; margin-right: auto; margin-top: 64px; margin-bottom: 64px; }
+            .wrap{ width:100%;}
+            .col{ width: 22%; display: inline-block;}
+            .center{text-align: center}
+            .pointer{cursor:pointer}
+            
+            /*Bot 부분(media쿼리 위로)*/
+             .padding-64-12{padding: 64px 12px;}
+            .padding-24{padding: 24px 0px;}
+            .padding{padding:  0px 20px;}
+            .padding-8{padding: 0px 8px;}
+            
+            .disblock{display: inline-block}
+            .contants{max-width: 980px; margin: auto;}
+            .input{height:36px; border:1px solid #ccc; width: 100%}
+            
+            .margin{margin: 20px 0;}
+            .c2{display:grid;
+                grid-template-columns: 1fr 2fr;}
+            
+            .name{grid-area: name;}
+            .email{grid-area: email;}
+            .sendmessage{grid-area: sendmessage}
+            
+            .right{float: right;}
+            .left{float: left}
+            .clear{clear:both}
+            .half{width:45%; margin:8px}
+            .full{width:94%;margin:8px}
+            .box{margin:0 -16px 8px -16px}
+            
+            /*footer 부분*/
+            
+           
+            .footer{background-color: black;}
+            .opacityHover:hover{opacity: 0.7}
+            .opacityOn{opacity: 0.8}
+            .opacityOff:hover{opacity:1.0}
+            .hover-green:hover{color:green}
+            .padding{padding: 64px 8px;}
+            .opacityOff-lightgray:hover{background-color: lightgray;}
+            .footerbutton{display:inline-block;padding:8px 16px;color: dimgray;text-align:center;cursor:pointer;white-space:nowrap; background-color: white; width: 100px; height:30px; line-height: 30px;}
+            .center{text-align: center;}
+            .colorWhite{color:white}
+            .footersection{margin-top:16px; margin-bottom:16px}
+            .btnCenter{width: 20%;}
+            
+            .bgimg-1,.bgimg-2,  .bgimg-3 {
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .bgimg-1 {
+                  background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+                  min-height: 100%;
+            }
+
+                /* Second image (Portfolio) */
+            .bgimg-2 {
+                  background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+                  min-height: 400px;
+            }
+
+                /* Third image (Contact) */
+            .bgimg-3 {
+                  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+                  min-height: 400px;
+            }
+            
+            /*미디어 부분*/
+            @media screen and (max-width: 630px) {
+                /*사진 grid로 나눠줬던거 1콜롬으로 다시 주기*/
+                .wrapper{grid-template-columns: 1fr}
+                /* 화면이 작아지면서 글이 사라지는 효과 주기*/
+                .display {display: none;}
+                #footnav {width:100%;}
+                .col{width:100%; padding:0px; }
+                .c2{display: grid;grid-template-columns: 1fr; float: left}
+                .w40{width: 100%;}
+                .half{width:100%;}
+                .full{width:100%;}
+                .box{margin:auto}
+            }
+            </style>
+    </head>
+    <body>
+        <!-- NAVIGATION BAR 부분 -->
+        <div class="top">
+        <a href="#home" class="button opacityOn opacityOff textdeco">HOME</a>
+        <a href="#about" class="button hide opacityOn opacityOff textdeco"> ABOUT</a>
+        <a href="#portfolio" class="button hide opacityOn opacityOff textdeco"> PORTFOLIO</a>
+        <a href="#contact" class="button hide opacityOn opacityOff textdeco"> CONTACT</a>
+        <a href="#" class="button right opacityOn opacityOff hover-red textdeco">SEARCH
+        </a>
+        </div>
+        <div id="home" class="bgimg-1 container">
+            <div class="logodiv wide">
+                <span class="fontlarge">M Y </span><span class="hide fontlarge">W E B S I T E </span> <span class="fontlarge"> L O G O</span>
+            </div>
+        </div>
+        
+        <!-- About 부분-->
+        <section id="about" class="section">
+            
+            <!--  -->
+            <article>
+                <h3 class="center">ABOUT ME</h3>
+                <!-- 문단 태그인 <p>태그 사용,내용 강조위해 em 태그 사용-->
+                <p class="center"><em>I love photography</em></p>
+                <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                
+                <!-- 이미지 부분 --> 
+                <div class="wrapper">
+                <div class="padding-12-24 " >
+                <p class="center">My Name</p>
+                <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" class="img-opacity img " width="100%" >
+                </div>
+                <div class="padding-12-24 top-bottom-margin display">    
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                   </p>
+                </div>     
+                </div>
+            </article>
+            
+             <!-- 푸터 위에 부분 --> 
+            <p class="center padding-12-24"><i>Im really good at:</i></p>
+            <!-- 게이지바 부분 --> 
+            <p class="a_name"><i>Photography</i></p>
+            <div class="databar center">
+                <!-- 게이지 표시위해 width로 조정  -->
+                <div class="data" style="width: 90%">90</div>
+            </div>
+            <p class="a_name"><i>Web Design</i></p>
+            <div class="databar center">
+                <div class="data" style="width: 80%">80</div>
+            </div>
+            <p class="a_name"><i>Photoshop</i></p>
+            <div class="databar center">
+                <div class="data" style="width: 75%">75</div>
+            </div>
+        </section>
+        
+        <!-- ABOUT 푸터 부분 --> 
+        <div class="footer center" style="background-color: black; color: white">
+                <div id="footnav" class="quater left" >
+                    <p><span>14+</span><br>
+                    Partners</p>
+                </div>
+                <div id="footnav" class="quater left">
+                    <p><span>55+</span><br>
+                    Projects Done</p>
+                </div>
+                <div id="footnav" class="quater left">
+                    <p><span>89+</span><br>
+                    Happy Clients</p>
+                </div>
+                <div id="footnav" class="quater left">
+                    <p><span>150+</span><br>
+                    Meetings</p>
+                </div>
+         </div>
+        
+        <!-- portfolio 이미지 -->
+        <div class="bgimg-2" >
+        </div>
+        <!-- MY WORK 부분 -->
+        <div class="content" id="portfolio">
+            <div class="center">
+                <h2>MY WORK</h2>
+                <p><em>Here are some of my latest lorem work ipsum       tipsum.</em><br> Click on the images to make them bigger</p>
+            </div>
+            <div class="wrap center">
+                <div class="col pointer">
+                <img src="https://www.w3schools.com/w3images/p1.jpg" class="w3-hover-opacity" style="width: 100%;">
+                </div>
+                <div class="col">
+                <img src="https://www.w3schools.com/w3images/p2.jpg" class="w3-hover-opacity " style="width: 100%">
+                </div>
+                <div class="col">
+                <img src="https://www.w3schools.com/w3images/p3.jpg" class="w3-hover-opacity "  style="width: 100%">
+                </div>
+                <div class="col">
+                <img src="https://www.w3schools.com/w3images/p4.jpg" class="w3-hover-opacity"  style="width: 100%">
+                </div>
+            </div>
+            <div class="wrap center">
+                <div class="col m3">
+                <img src="https://www.w3schools.com/w3images/p5.jpg" 1 class="w3-hover-opacity" style="width: 100%">
+                </div>
+                <div class="col m3">
+                <img src="https://www.w3schools.com/w3images/p6.jpg" class="w3-hover-opacity " style="width: 100%">
+                </div>
+                <div class="col m3">
+                <img src="https://www.w3schools.com/w3images/p7.jpg" class="w3-hover-opacity "  style="width: 100%">
+                </div>
+                <div class="col m3">
+                <img src="https://www.w3schools.com/w3images/p8.jpg" class="w3-hover-opacity"  style="width: 100%">
+                </div >
+                <button class="btnCenter" style="margin-top:64px">LOAD MORE</button>
+            </div>
+        </div>
+        <div class="bgimg-3 cancel">
+        </div>
+         <!--지도 부분-->
+         <div class="contants padding-64-12">
+            <div class="center">
+                <h2>WHERE I WORK</h2>
+                <p>I'd love your feedback!</p>
+            </div>
+            <div class="c2 padding-24">
+                <div class="padding" >
+                    <img src="https://www.w3schools.com/w3images/map.jpg" align="left" style="width: 100%;">
+
+                </div>
+            <div class="padding">
+                <span style="font-size: 24px">Chicago,US</span><br>
+                <span style="font-size: 24px">Phone:+00 151515</span><br>
+                <span style="font-size: 24px">Email:mail@mail.com</span><br>
+                <p>Swing by for a cup of , or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="box">
+                    <div class="left disblock half" >
+                    <input class="input" type="text" placeholder="Name" required="" name="Name">
+                    </div>
+                    <div class="left disblock half">
+                    <input class="input" type="text" placeholder="Email" required="" name="Email">
+                    </div>
+                    <div class="left full">
+                    <input class="input" type="text" placeholder="Message" required="" name="Message">
+                    </div>
+                    </div>
+                    <button class="right" type="submit" style="background-color: black; color: white; height: 40px; border : 0px">
+                    <i></i> SEND MESSAGE
+                    </button>
+                </form>
+                </div>
+            </div>
+            </div>
+        
+        <!-- footer-->
+        <div class="footer center opacityOn opacityOff padding">
+            <a class="footerbutton opacityOff-lightgray" id="home">To the top</a>
+            <div class="footersection">
+                <i class="colorWhite opacityHover">face</i>
+                <i class="colorWhite opacityHover">insta</i>
+                <i class="colorWhite opacityHover">??</i>
+                <i class="colorWhite opacityHover">??</i>
+                <i class="colorWhite opacityHover">twit</i>
+                <i class="colorWhite opacityHover">IN</i>
+            </div>
+            <p style="color: white">powerd by <a class="colorWhite hover-green" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </div>
+    </body>
+</html>

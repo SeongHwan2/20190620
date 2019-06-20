@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <style>
+            body, html{ margin:0px; padding:0px;}
+            .j-paddingF1{ padding: 70px 45px; background-color: rgba(128, 128, 128, 0.1); height:460px;}
+            .j-paddingF2{ padding: 30px; line-height: 50px}
+            .j-center{text-align: center}
+            .j-leftbox{
+                width: 40%;
+                height: 80%;
+                float: left;
+                margin-right: 11%
+                    background:
+            }
+            .j-leftbox1{
+                width: 60%;
+                height: 80%;
+                float: left;
+            }
+            .j-clear{clear:both;height:0px;}
+            .j-footer{height:180px;}
+            .j-opacity{ opacity:0.6}
+            .j-clear{clear: both}
+            @media screen and (max-width:600px){
+                .j-paddingF1{height: 600px;}
+                .j-leftbox{width: 100%;height:150px;}
+                .j-rigthbox{width: 100%;}
+                .j-leftbox1{width:100%; height:30px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="j-paddingF1">
+            <div>
+            <h2 class="j-center">CONTACT<br><br></h2>
+            </div>
+            
+            <div class="j-leftbox" style="font-size: 14px"> 
+                <div class="j-opacity">
+                  <p>Contact us and we'll get back to you within 24 hours.</p>
+                  <p style="font-size: 15px"><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+                  <p style="font-size: 15px"><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                  <p style="font-size: 15px"><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                </div>
+            </div>
+            
+            <div class="j-leftbox1">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <input class="form-control" id="name" name="name" placeholder="Name" type="text" required="">
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                  <div class="row">
+                    <div class="col-sm-12 form-group">
+                      <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                        </div>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.w3schools.com/w3images/map.jpg" style="width:100%">
+        </div>
+        <div class="j-paddingF2 j-footer j-center">
+            <div id="top"><a href="HOME" class="glyphicon glyphicon-chevron-up" style="color: #fd4108; font-size: 150%"></a></div>
+            <div >
+                <span class="j-opacity">Bootstrap Theme Made By </span>
+                <a href="www.w3schools.com">www.w3schools.com</a> 
+            </div>
+        </div>
+       
+    </body>
+</html>

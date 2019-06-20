@@ -1,0 +1,46 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var textList = [];
+
+        function selectText(){
+            var html = "";
+            var urlList = [];
+            var urls = {};
+            if(localStorage.getItem("list") == null){
+                html = "<div>내용이 없습니다.</div>";
+            } else {
+                textList = JSON.parse(localStorage.getItem("list"));
+                console.log(textList);
+                for(var i = 0; i < textList.length; i++){
+                    urls = '?title=' + textList[i]["title"] + '&' + 'contents=' + textList[i]["contents"];
+                    urlList[urlList.length] = urls;
+                    console.log(urls);
+                    html += '<div>[제목] : ' + '<a href="wide.html' + urlList[i] +'">'+ textList[i]["title"] +'</a>' + "</div>";
+                   // html += '<div class="hide" >' + textList[i]["contents"] + '</div>';
+                      
+                }
+            }
+            $("#textList").empty().append(html);
+        } 
+
+        selectText(); 
+        
+    });
+</script>
+<style>
+    #textList div{
+        border: 1px solid black;
+        width: calc(100% - 40px);
+        margin-bottom: 10px;
+        
+    }
+    
+    
+</style>
+<body>
+    <h1>글목록</h1>
+    <div id="textList">
+    </div>    
+</body>
+   

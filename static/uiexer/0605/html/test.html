@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{box-sizing: border-box;}
+            html, body {padding : 0; margin: 0;}
+            header {height: 20px; background-color: antiquewhite;}
+            footer {height: 40px; background-color: black; clear: both;}
+            section article {height: 100px !important; float: left; border: 1px solid black;}
+            .w20{width: 20%;}
+            .w50{width: 50%;}
+            .w60{width: 60%;}
+            .body {padding: 0 10%;}
+            /*********************************************
+            *스타일 주석 처리 방법~~ (유지보수 처리 용이)*/
+            .m10 {margin: 20px;}
+            .w20m {width: calc(20% - 40px);}
+            .w50m {width: calc(50% - 40px);}
+            .w60m {width: calc(60% - 40px);}
+            section article {height: calc(100px - 40px) !important;}
+            /**********************************************/
+        </style>
+    </head>
+    <body>
+        <header class="body"></header>
+        <section class="body">
+            <article class="w20 m10 w20m"></article>
+            <article class="w60 m10 w60m"></article>
+            <article class="w20 m10 w20m"></article>
+            <article class="w50 m10 w50m"></article>
+            <article class="w50 m10 w50m"></article>
+            <article class="w50 m10 w50m"></article>
+            <article class="w50 m10 w50m"></article>
+            <article class="w20 m10 w20m"></article>
+            <article class="w60 m10 w60m"></article>
+            <article class="w20 m10 w20m"></article>
+        </section>
+        <footer class="body"></footer>    
+    </body>
+</html>

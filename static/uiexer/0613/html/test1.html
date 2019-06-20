@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>스크립트</title>
+<script>
+    var 게시판 = {
+            사용자 : [],
+            입력 : function(id){
+                var index = 게시판.사용자.length;
+                게시판.사용자[index] = id;}
+    }
+    
+    // 사용자 배열 선언 및 초기화
+    var 사용자 = [];
+    function 입력(id){
+        //배열 길이값을 구해서 다음 인덱스값으로 사용
+        var index = 사용자.length;
+        // 배열에 인덱스 값 위치에 파라미터값 대입하기
+        사용자[index] = id;
+    }
+    
+    function 출력 () {
+        for(var i = 0; i < 사용자.length; i++){
+            console.log(사용자[i]);
+        }
+    }
+    
+    var 게시판2 = {
+        입력 : 입력,
+        출력 : 출력
+    }
+</script>
+</head>
+<body>
+        
+</body>
+</html>
