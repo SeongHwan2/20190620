@@ -1,0 +1,82 @@
+nav button {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  margin-right: 35px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  background-color: inherit;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(221, 221, 221);
+}
+
+nav button:hover {
+  background-color: black;
+  color: white;
+}
+
+.Mdiv {
+  top: 60px;
+  position: relative;
+  width: 100vw;
+  text-align: center;
+}
+
+.ldiv {
+  width: 80%;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.but {
+  height: 70px;
+  line-height: 70px;
+  vertical-align: middle;
+  text-align: right;
+  /*display: inline-block;*/
+  /*width: 80%;*/
+}
+
+.but button {
+  margin-right: 20px;
+}
+
+div ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+div ul li {
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+  float: left;
+  /*margin-top: 10px;*/
+  border-bottom: 1px solid black;
+  /*text-align: center;*/
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+li h5 {
+  margin: 0;
+  display: inline-block;
+  width: calc((100%/6) * 2);
+  text-align: center;
+}
+
+li input{
+  width: calc((100%/6) * 3);
+}
